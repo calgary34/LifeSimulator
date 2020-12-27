@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Life simulator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <button onclick="workhard()">Work</button>
+    <br>Dollars: $<span id="money">0</span>
+    Current job: <span id="job"></span><br>
+    Money per click: <span id="moneyPerClick"></span><br>
+    <p id="info"></p>
+    <div>
+      Jobs: (Click them and get hired)<br>
+      <ul id="jobs">
+        <li onclick='setJob("McDonalds")'>McDonald's ($9 per click)</li>
+        <li onclick='setJob("Junior Developer")'>Junior Developer (Starts at $35 per click)</li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
